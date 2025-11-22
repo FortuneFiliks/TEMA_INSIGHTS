@@ -1,0 +1,295 @@
+@media(min-width: 1025px){
+/****************************************************START****************************************************/
+	*{
+		padding : 0;
+		margin : 0;
+		box-sizing : border-box;
+		
+	}
+	:root{
+		--pri_color :#002875;
+		--sec_color :#7a0632;
+		--bg_color :#eff6ff;
+        overflow-y : visible !important;		
+	}
+    body{
+    	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    	overflow-x : hidden;
+		background-color : #eff6ff;
+    }
+	
+	
+	
+	
+/*************************************TEXT ANIMATION*************************************/	
+	
+	
+    .char{
+        font-size: 4.5rem;
+        display: inline-block;
+        animation: an 1s ease-out 1 both;
+    	background : repeating-linear-gradient(to right,#AE8626,#F7EF8A,#D2AC47,#EDC967);
+    	-webkit-text-fill-color :transparent;
+    	background-clip : text;	
+    }	
+	
+	
+	
+    .char_animated{
+        animation: an 1s ease-out 1 both;		
+    }
+
+
+    @keyframes an{
+        from{
+            opacity: 0;
+            transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+        }
+        to{
+            opacity: 1;
+            transform: perspective(500px) translate3d(0, 0, 0);
+        }
+    }
+	
+/******************************MOBILE MENU******************************/
+	
+	.mobile_menu_section{ 
+		display : none !important;
+	}	
+	
+	
+
+/******************************FIRST SECTION******************************/	
+    #first_section{
+        width : 100%;
+		background-image : url("../IMAGES/glowing-filament-ignites-ideas-innovative-solutions-generated-by-ai_original.webp");
+		min-height : 100dvh;
+		min-height : 100vh;
+		overflow-x : hidden;
+		/* position : relative; */
+		background-size : cover;
+		border-bottom-right-radius : 50px;
+		border-bottom-left-radius : 50px;		
+	}
+	
+	.first_section_content{
+		width : 100%;
+		min-height : 100dvh;
+		min-height : 100vh;
+		background-color : #010b13B2;
+		border-bottom-right-radius : 50px;
+		border-bottom-left-radius : 50px;
+		position : relative;
+	}
+	
+
+	.insight_headline_background{
+
+        z-index : 5;		
+	    min-height : 110dvh;
+		min-height : 110vh;
+		border-bottom-right-radius : 50px;
+		border-bottom-left-radius : 50px;
+        width : 100%;		
+	}
+	.insight_headline_background_content{
+		width : 100%;
+		height : 100%;
+		border-bottom-right-radius : 50px;
+		border-bottom-left-radius : 50px;		
+	}
+	.first_section_headline{
+		color : #ffffff;
+		font-weight : 3rem;
+		padding : 300px 200px 0 200px;
+		font-weight : 600;
+	}
+	
+    .left_word{
+		position : absolute;
+		top : 40%;
+		left : 15%;
+        color : #ffffff;
+        font-size : 6rem;
+        font-weight : 600;
+		/* animation-iteration-count : infinite; */
+		/* animation-name : animate_strategize; */
+		/* animation-timing-function : ease-in; */
+		/* animation-duration : 3s; */
+		/* animation-fill-mode : forwards; */
+        transform : translateX(-20%);
+      		
+	}
+	
+	.bottom_word{
+		position : absolute;
+		top : 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        color : #ffffff;
+        font-size : 6rem;
+        font-weight : 600;
+		/* transform : translateY(-20%); */
+	}
+	
+	.right_word{
+		position : absolute;
+		top : 40%;
+		right : 20%;
+        color : #ffffff;
+        font-size : 6rem;
+        font-weight : 600;
+		transform : translateX(20%);		
+	}	
+    .charm-bold {
+      font-family: "Charm", serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+	
+/******************************FIRST SECTION ANIMATION******************************/
+
+     @keyframes animate_strategize{
+        from{
+			transform : translateX(-20%);
+		}
+		to{
+			transform : translateX(0);
+		}
+		
+	 }		 
+	
+	 .animate_strategize_class{
+		 animation : animate_strategize 3s linear forwards;
+	 }
+	 
+	 
+     /* @keyframes animate_accelerate{ */
+        /* from{ */
+			/* transform : translateY(-20%); */
+		/* } */
+		/* to{ */
+			/* transform : translateY(0); */
+		/* } */
+		
+	 /* }		  */
+	
+	 /* .animate_accelerate_class{ */
+		 /* animation : animate_accelerate 3s linear forwards; */
+	 /* } */
+
+
+     @keyframes animate_convert{
+        from{
+			transform : translateX(20%);
+		}
+		to{
+			transform : translateY(0);
+		}
+		
+	 }		 
+	
+	 .animate_convert_class{
+		 animation : animate_convert 3s linear forwards;
+	 }	 
+	 
+	 
+	
+/******************************SECOND SECTION******************************/	
+	
+	#second_section{
+		
+		padding : 6rem 15rem 6rem 15rem;
+	}
+	
+	.second_section_heading{
+		font-size : 3rem;
+		font-weight : 700;
+		/* color : #002875; */
+		color : #001e65;
+	}
+	
+	.article_subtext{
+		font-size : 1rem;
+		Margin : 0;
+	}
+	
+	.article{
+		font-size : 1.2rem;
+		padding : 50px 0 0 0;
+	}
+	
+	.author_profile{
+		width : 100%;
+		height : 150px;
+		background : radial-gradient(#001F4A, #090f21);
+		border-radius : 5px;
+		margin : 50px 0 50px 0;
+		padding : 0 0 0 0;		
+	}
+    .author_profile_flex{
+		display : flex;
+		align-items : center;
+		width : 100%;
+		color : #ffffff;
+	}
+	.author_img{
+		width : 150px;
+		height : 150px;
+		padding : 5px;
+	}
+	.author_details{
+		font-size : 0.9rem;
+	}
+	
+	
+	
+   
+	
+	.blog_item{
+		border-bottom : solid 1px #7a0632;
+		padding : 0 0 15px 0;
+		margin : 50px 0 0 0;
+	}
+	
+	.blog_item_flex{
+		display : flex;
+		align-items : center;
+		width : 100%;
+		height : 100px;
+	}
+	
+	.blog_item_img{
+	    width :20%;
+        height :100px ;		
+		margin : 0 0 0 0;
+		padding : 0 0 0 0;
+	}
+	.blog_item_heading{
+	    font-size : 1.2rem;
+        font-weight : 700;
+        margin : 0 0 0 0;
+	
+	}
+	.blog_item_link{
+        color : #001e65;			
+	}
+	.blog_item_brief{
+		margin : 0 0 0 0;
+		padding : 0 0 0 15px;
+		color : #001e65;
+		width : 80%;
+	}
+	.blog_item_brief p{
+        margin : 0 0 0 0;
+		padding : 0 0 0 0;
+	}
+	
+	.more_articles_heading{
+		color :#7a0632;
+		font-weight : 600;
+		font-size : 2rem;
+	}
+/****************************************************END****************************************************/  
+}	
+
