@@ -1,3 +1,17 @@
+$(".menu").toggle(view_Menu, close_Menu);
+
+function view_Menu(){
+	$(".mobile_menu_section").css({"display":"block"});
+	$(":root").css({"overflow-y":"hidden"});
+}
+
+function close_Menu(){
+	
+	$(".mobile_menu_section").css({"display":"none"});
+	$(":root").css({"overflow-y":"visible"});
+}
+
+
 const get_Strategize_Word = document.querySelector(".left_word");
 
 function animate_Strategize_Word(entries){
